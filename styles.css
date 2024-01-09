@@ -1,0 +1,103 @@
+ *, *::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+
+ .wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    background-attachment:fixed;  
+    background: linear-gradient(45deg ,#ccd91a,#99b333, #668c4d);
+ } 
+
+ .tic-tac-toe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height:90%;
+    max-width: 20rem;
+    max-height: 20rem;
+    padding: 25px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+ }
+
+ .box{
+    color: #336666;
+    font-size: 3rem;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    min-width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+
+ .row{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+   
+ }
+
+ .box1, .box2, .box4, .box5{
+    border-right : 5px solid #ffff00;
+    border-bottom : 5px solid #ffff00;
+ }
+.box7, .box8{
+    border-right : 5px solid #ffff00;
+}
+.box3, .box6{
+    border-bottom : 5px solid #ffff00;
+}
+ .game-info{
+   position: absolute;
+   top: 3rem;
+   left: 50%;
+   transform: translateX(-50%);
+    font-weight: 500;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding : 0.5rem 3rem;
+    color : #336666;
+    background-color: rgb(255, 255, 255, 0.1);
+ }
+
+ .btn{
+   position: absolute;
+   bottom: 3rem;
+   left: 50%;
+   transform: translateX(-50%);
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255, 0.1);
+    font-weight: 500;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding : 0.5rem 3rem;
+    color : #336666;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+ }
+
+ .btn.active{
+    display: flex;
+ }
+
+ .win{
+    background-color:#07de2b61 ;
+ }
